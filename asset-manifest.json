@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portafolio/static/css/main.fdfac640.chunk.css",
+    "main.js": "/portafolio/static/js/main.d4472606.chunk.js",
+    "main.js.map": "/portafolio/static/js/main.d4472606.chunk.js.map",
+    "runtime-main.js": "/portafolio/static/js/runtime-main.5adc1915.js",
+    "runtime-main.js.map": "/portafolio/static/js/runtime-main.5adc1915.js.map",
+    "static/js/2.412d7806.chunk.js": "/portafolio/static/js/2.412d7806.chunk.js",
+    "static/js/2.412d7806.chunk.js.map": "/portafolio/static/js/2.412d7806.chunk.js.map",
+    "static/js/3.a014d0a1.chunk.js": "/portafolio/static/js/3.a014d0a1.chunk.js",
+    "static/js/3.a014d0a1.chunk.js.map": "/portafolio/static/js/3.a014d0a1.chunk.js.map",
+    "index.html": "/portafolio/index.html",
+    "static/css/main.fdfac640.chunk.css.map": "/portafolio/static/css/main.fdfac640.chunk.css.map",
+    "static/js/2.412d7806.chunk.js.LICENSE.txt": "/portafolio/static/js/2.412d7806.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/portafolio/static/media/punts.de2a367d.svg",
+    "static/media/book.a882ea2f.svg": "/portafolio/static/media/book.a882ea2f.svg",
+    "static/media/camera.7e6db5af.svg": "/portafolio/static/media/camera.7e6db5af.svg",
+    "static/media/code.a636dc58.svg": "/portafolio/static/media/code.a636dc58.svg",
+    "static/media/contactinfo.a3f945be.svg": "/portafolio/static/media/contactinfo.a3f945be.svg",
+    "static/media/desarollo.aa0ff6a3.svg": "/portafolio/static/media/desarollo.aa0ff6a3.svg",
+    "static/media/discord.3940f790.svg": "/portafolio/static/media/discord.3940f790.svg",
+    "static/media/disign.b15702db.svg": "/portafolio/static/media/disign.b15702db.svg",
+    "static/media/facebook.d086b25d.svg": "/portafolio/static/media/facebook.d086b25d.svg",
+    "static/media/gmail.31458ecb.svg": "/portafolio/static/media/gmail.31458ecb.svg",
+    "static/media/logo.6ce24c58.svg": "/portafolio/static/media/logo.6ce24c58.svg",
+    "static/media/mantenimiento.b838a7a9.svg": "/portafolio/static/media/mantenimiento.b838a7a9.svg",
+    "static/media/meditation.553afe52.svg": "/portafolio/static/media/meditation.553afe52.svg",
+    "static/media/yoxd.77e22121.png": "/portafolio/static/media/yoxd.77e22121.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5adc1915.js",
+    "static/js/2.412d7806.chunk.js",
+    "static/css/main.fdfac640.chunk.css",
+    "static/js/main.d4472606.chunk.js"
+  ]
+}
