@@ -1,38 +1,1089 @@
-.App {
+/* line 1, ../Nuevo portafolio/sass/style.scss */
+
+@font-face{
+  font-family:monotype ;
+  src:local(monotype), url('./fonts/MTCORSVA.TTF') format('truetype');
+}
+
+@font-face{
+  font-family:vanio ;
+  src: local(vanio),url('./fonts/Vanio-Regular.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: monotype;
+}
+
+/* line 8, ../Nuevo portafolio/sass/style.scss */
+html {
+  scroll-behavior: smooth;
+}
+
+/* line 11, ../Nuevo portafolio/sass/style.scss */
+body::-webkit-scrollbar {
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.349) inset;
+}
+
+/* line 15, ../Nuevo portafolio/sass/style.scss */
+body::-webkit-scrollbar-thumb {
+  height: 10vh;
+  background: #b68f7a;
+  border-radius: 5px;
+}
+
+/* line 24, ../Nuevo portafolio/sass/style.scss */
+body {
+  background: #3b2c2c;
+  overflow-x: hidden;
+}
+
+/* line 28, ../Nuevo portafolio/sass/style.scss */
+body header {
+  box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.096);
+  height: 90vh;
+  width: 100%;
+  background: url("./img/maya.svg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+/* line 36, ../Nuevo portafolio/sass/style.scss */
+body header div:nth-child(2) {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 41, ../Nuevo portafolio/sass/style.scss */
+body header div:nth-child(2) div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 55vw;
+}
+
+/* line 47, ../Nuevo portafolio/sass/style.scss */
+body header div:nth-child(2) div:nth-child(1) h1 {
+  font-size: 7vh;
+}
+
+/* line 50, ../Nuevo portafolio/sass/style.scss */
+body header div:nth-child(2) div:nth-child(1) p {
+  font-size: 3vh;
+  text-align: ce;
+}
+
+/* line 54, ../Nuevo portafolio/sass/style.scss */
+body header div:nth-child(2) div:nth-child(1) .cv {
+  text-decoration: none;
+  font-size: 3vh;
+  border: 1px solid white;
+  padding: 5px 10px;
+  width: 20vw;
+  text-align: center;
+  transition: all 300ms;
+}
+
+/* line 62, ../Nuevo portafolio/sass/style.scss */
+body header div:nth-child(2) div:nth-child(1) .cv:hover {
+  color: black;
+  border: 1px solid black;
+  box-shadow: 0px 100px 1px white inset, 5px 5px 40px rgba(255, 255, 255, 0.116);
+}
+
+/* line 72, ../Nuevo portafolio/sass/style.scss */
+body header div:nth-child(3) {
+  background: url("./img/faceinitial.svg");
+  background-size: 70%;
+  background-position: 90% 100%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 40%;
+}
+
+/* line 80, ../Nuevo portafolio/sass/style.scss */
+body header nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+}
+
+/* line 88, ../Nuevo portafolio/sass/style.scss */
+body header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 2.4vh;
+  position: relative;
+}
+
+/* line 93, ../Nuevo portafolio/sass/style.scss */
+body header nav a::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  background: white;
+  width: 0%;
+  height: 1px;
+  left: 50%;
+  transition: all 300ms;
+}
+
+/* line 104, ../Nuevo portafolio/sass/style.scss */
+body header nav a:hover i {
+  animation: navarotate 1s ease-in-out;
+}
+
+/* line 107, ../Nuevo portafolio/sass/style.scss */
+body header nav a:hover::before {
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to left, white, transparent);
+  left: 0%;
+}
+
+/* line 114, ../Nuevo portafolio/sass/style.scss */
+body header nav a i {
+  padding-right: 3px;
+}
+
+/* line 121, ../Nuevo portafolio/sass/style.scss */
+header nav a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 4px 8px;
+}
+
+/* line 126, ../Nuevo portafolio/sass/style.scss */
+header nav a span:nth-child(2) {
+  height: 110%;
+  width: 1px;
+  background: white;
+  position: absolute;
+  left: 0px;
+  top: 130px;
+}
+
+/* line 134, ../Nuevo portafolio/sass/style.scss */
+header nav a span:nth-child(3) {
+  height: 110%;
+  width: 1px;
+  background: white;
+  position: absolute;
+  right: 0px;
+  top: -140px;
+}
+
+/* line 142, ../Nuevo portafolio/sass/style.scss */
+header nav a span:nth-child(4) {
+  height: 1px;
+  width: 100%;
+  background: white;
+  position: absolute;
+  top: 0px;
+  right: 180px;
+}
+
+/* line 150, ../Nuevo portafolio/sass/style.scss */
+header nav a span:nth-child(5) {
+  height: 1px;
+  width: 100%;
+  background: white;
+  position: absolute;
+  left: 180px;
+  bottom: 0px;
+}
+
+/* line 160, ../Nuevo portafolio/sass/style.scss */
+header nav a:hover span:nth-child(4) {
+  animation: move 200ms ease-in-out forwards;
+}
+
+/* line 163, ../Nuevo portafolio/sass/style.scss */
+header nav a:hover span:nth-child(3) {
+  animation: move2 400ms ease-in-out forwards;
+}
+
+/* line 167, ../Nuevo portafolio/sass/style.scss */
+header nav a:hover span:nth-child(5) {
+  animation: move3 600ms ease-in-out forwards;
+}
+
+/* line 170, ../Nuevo portafolio/sass/style.scss */
+header nav a:hover span:nth-child(2) {
+  animation: move4 800ms ease-in-out forwards;
+}
+
+@keyframes move {
+  to {
+    right: 0px;
+  }
+}
+
+@keyframes move2 {
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes move4 {
+  to {
+    top: 0px;
+  }
+}
+
+@keyframes move3 {
+  to {
+    left: 0px;
+  }
+}
+
+@keyframes navarotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  90% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* line 214, ../Nuevo portafolio/sass/style.scss */
+.me {
+  display: block;
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* line 223, ../Nuevo portafolio/sass/style.scss */
+.me .meimg {
+  height: 90%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 229, ../Nuevo portafolio/sass/style.scss */
+.me .meimg .mecart {
+  width: 70%;
+  background: #534444;
+  border-radius: 20px;
+  box-shadow: -4px 2px #ffd19b;
+  position: relative;
+}
+
+/* line 236, ../Nuevo portafolio/sass/style.scss */
+.me .meimg .mecart::before {
+  content: "";
+  z-index: -1;
+  height: 100%;
+  background-blend-mode: multiply;
+  width: 100%;
+  background-image: url("./img/punts.svg");
+  position: absolute;
+  transform: translate(-10%, 41%);
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+/* line 249, ../Nuevo portafolio/sass/style.scss */
+.me .meimg .mecart::after {
+  content: "Nestormyriee@gmail.com";
+  position: absolute;
+  left: 0px;
+  display: block;
+  font-size: 3vh;
+  color: rgba(255, 255, 255, 0.226);
+  transform: rotate(-90deg) translate(20vh, -12vh);
+}
+
+/* line 259, ../Nuevo portafolio/sass/style.scss */
+.me .meimg .mecart img {
+  width: 100%;
+  border-radius: 0 0px 20px 20px;
+transform: translate(0,0.4vh);
+}
+
+/* line 264, ../Nuevo portafolio/sass/style.scss */
+.me .whotext {
+  height: 90%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 270, ../Nuevo portafolio/sass/style.scss */
+.me .whotext .present {
+  width: 90%;
+  height: 80%;
+}
+
+/* line 273, ../Nuevo portafolio/sass/style.scss */
+.me .whotext .present h1 {
+  font-size: 5vh;
+  line-height: 9vh;
+  text-align: center;
+  position: relative;
+}
+
+/* line 278, ../Nuevo portafolio/sass/style.scss */
+.me .whotext .present h1::before {
+  content: "About Us";
+  position: absolute;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 3vh;
+  transform: translate(50%, -40%);
+}
+
+/* line 286, ../Nuevo portafolio/sass/style.scss */
+.me .whotext .present p {
+  font-size: 2vh;
+  text-align: justify;
+  font-family: vanio;
+}
+
+/* line 295, ../Nuevo portafolio/sass/style.scss */
+.whoahref {
+  display: flex;
+  margin-top: 4vh;
+  width: 80vw;
+}
+
+/* line 299, ../Nuevo portafolio/sass/style.scss */
+.whoahref .hobbies,
+.whoahref .goals {
+  height: 8vh;
+  width: 30%;
+  margin-right: 2vh;
+}
+
+/* line 305, ../Nuevo portafolio/sass/style.scss */
+.whoahref .hobbies h2,
+.whoahref .goals h2 {
+  border-bottom: 1px solid #ffd19b;
+  margin-bottom: 1vh;
+  text-align: left;
+  font-size: 2rem;
+  color: #ffd19b;
+}
+
+/* line 312, ../Nuevo portafolio/sass/style.scss */
+.whoahref .hobbies span,
+.whoahref .goals span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transform: scale(0.8);
+  justify-content: space-between;
+}
+
+/* line 319, ../Nuevo portafolio/sass/style.scss */
+.whoahref .hobbies span i,
+.whoahref .goals span i {
+  padding: 0.3vh;
+}
+
+/* line 321, ../Nuevo portafolio/sass/style.scss */
+.whoahref .hobbies span i p,
+.whoahref .hobbies span i h3,
+.whoahref .goals span i p,
+.whoahref .goals span i h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* line 326, ../Nuevo portafolio/sass/style.scss */
+.whoahref .hobbies span i h3,
+.whoahref .goals span i h3 {
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* line 331, ../Nuevo portafolio/sass/style.scss */
+.whoahref .hobbies img,
+.whoahref .goals img {
+  height: 60%;
+  margin-right: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* line 337, ../Nuevo portafolio/sass/style.scss */
+.disigns {
+  text-decoration: none;
+  font-size: 3vh;
+  display: block;
+  border: 1px solid white;
+  border-radius: 2px;
+  padding: 2px 30px;
+  margin-right: 2vh;
+  margin-top: 4vh;
+  width: 35vh;
+  text-align: center;
+  height: 4vh;
+}
+
+/* line 350, ../Nuevo portafolio/sass/style.scss */
+.svglines {
+  position: absolute;
+  width: 100vw !important;
+  filter: drop-shadow(0px 5px 3px rgba(0, 0, 0, 0.027));
+}
+
+/* line 356, ../Nuevo portafolio/sass/style.scss */
+.svglines-down {
+  filter: drop-shadow(22px 0px 3px rgba(0, 0, 0, 0.027));
+}
+
+/* line 360, ../Nuevo portafolio/sass/style.scss */
+.skills {
+  height: 60vh;
+  width: 100%;
+  background: #312727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 368, ../Nuevo portafolio/sass/style.scss */
+.skills .skillcontent {
+  height: 53vh;
+  width: 80%;
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* line 375, ../Nuevo portafolio/sass/style.scss */
+.skills .skillcontent h1 {
+  font-size: 5vh;
+  text-align: center;
+}
+
+/* line 379, ../Nuevo portafolio/sass/style.scss */
+.skills .skillcontent p {
+  font-size: 2vh;
+  font-family: vanio;
+  text-align: justify;
+  text-align-last: center;
+  width: 50%;
+  color: rgba(255, 255, 255, 0.37);
+  margin-bottom: 1vh;
+}
+
+/* line 388, ../Nuevo portafolio/sass/style.scss */
+.skills .skillcontent .porcentajes {
+  width: 70vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: 40vh;
+}
+
+/* line 394, ../Nuevo portafolio/sass/style.scss */
+.skills .skillcontent .porcentajes .pr {
+  width: 40%;
+}
+
+/* line 397, ../Nuevo portafolio/sass/style.scss */
+.skills .skillcontent .porcentajes .pr h2 {
+  margin-left: 1vh;
+  font-size: 2vw;
+}
+
+/* line 401, ../Nuevo portafolio/sass/style.scss */
+.skills .skillcontent .porcentajes .pr .bar {
+  position: relative;
+  width: 100%;
+  background: #54433a;
+  height: 1.8vh;
+  border-radius: 20px;
+}
+
+/* line 415, ../Nuevo portafolio/sass/style.scss */
+.css::before,
+.js::before,
+.adobexd::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #ffd19b;
+  border-radius: 20px;
+}
+
+/* line 427, ../Nuevo portafolio/sass/style.scss */
+.php::before,
+.node::before,
+.mysql,
+.react::before,
+.adobeIllustrator::before {
+  content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  background-color: #ffd19b;
+  border-radius: 20px;
+}
+
+/* line 440, ../Nuevo portafolio/sass/style.scss */
+.mysql::before {
+  content: "";
+  height: 100%;
+  width: 20%;
+  position: absolute;
+  background-color: #ffd19b;
+  border-radius: 20px;
+}
+
+/* line 449, ../Nuevo portafolio/sass/style.scss */
+.hobbies {
+  height: 60vh;
+}
+
+/* line 453, ../Nuevo portafolio/sass/style.scss */
+.services {
+  height: 70vh;
+  width: 100vw;
+  background: url("./img/pruebas5000.svg") no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0px 10vw;
+  border-bottom: 3px solid #ffd19b;
+}
+
+/* line 465, ../Nuevo portafolio/sass/style.scss */
+.services .card {
+  backdrop-filter: blur(5px);
+  background: rgba(0, 0, 0, 0.178);
+  height: 40vh;
+  width: 23vw;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 2vh;
+  border-bottom: 1px solid white;
+  box-shadow: 0px 19px 5px rgba(0, 0, 0, 0.089);
+}
+
+/* line 477, ../Nuevo portafolio/sass/style.scss */
+.services .card img {
+  width: 70%;
+  height: 7vw;
+}
+
+/* line 481, ../Nuevo portafolio/sass/style.scss */
+.services .card p {
+  text-align: justify;
+  text-align-last: center;
+  font-size: 2vh;
+}
+
+/* line 486, ../Nuevo portafolio/sass/style.scss */
+.services .card h1 {
+  font-size: 4vh;
+}
+
+/* line 491, ../Nuevo portafolio/sass/style.scss */
+.prtitle {
+  text-align: center;
+  font-size: 6vh;
+  margin-bottom: 2vh;
+}
+
+/* line 496, ../Nuevo portafolio/sass/style.scss */
+.proyectos {
+  width: 100vw;
+  padding: 0px 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* line 503, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect {
+  overflow: hidden;
+  height: 45vh;
+  width: 25vw;
+  margin: 1vh;
+  background: white;
+  box-shadow: 5px -5px #ffd19b;
+  transition: box-shadow 300ms;
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 512, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.158);
+  z-index: 1;
+}
+
+/* line 522, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect .view {
+  position: absolute;
+  height: 40vh;
+  bottom: 0;
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 300ms;
+  border-radius: 5% 5% 0 0%;
+  z-index: 1;
+  bottom: -100%;
+}
+
+/* line 535, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect .view a {
+  display: block;
   color: white;
+  text-align: center;
+  font-size: 3vh;
+  padding: 1vh;
+  background: #3d302d;
+  border: none;
+  border: 1px solid white;
+  text-decoration: none;
+  transition: all 300ms;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+/* line 549, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect .view a:before {
+  content: "";
+  height: 40vh;
+  width: 2px;
+  left: 50%;
+  z-index: -1;
+  background: #3b2c2c;
+  position: absolute;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* line 562, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect:nth-child(1) {
+  background: url("./img/ip.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 568, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect:nth-child(2) {
+  background: url("./img/cdr.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 574, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect:hover {
+  box-shadow: 0px 0px #ffd19b, 10px 10px 10px 4px rgba(0, 0, 0, 0.219) inset;
+}
+
+/* line 578, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect:hover .view {
+  bottom: 0%;
+}
+
+/* line 581, ../Nuevo portafolio/sass/style.scss */
+.proyectos .proyect:hover:before {
+  display: block;
+}
+
+/* line 587, ../Nuevo portafolio/sass/style.scss */
+.containerform {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #312727;
+  border-top: 3px solid #ffd19b;
+  margin-top: 14vh;
+  margin-bottom: 20vh;
+  position: relative;
+}
+
+
+/* line 597, ../Nuevo portafolio/sass/style.scss */
+.containerform div {
+  width: 40%;
+}
+
+/* line 600, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  height: 90%;
+}
+
+/* line 605, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) form {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 612, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) form span {
+  width: 50%;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1vh;
+}
+
+/* line 619, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) form span input[type="text"], .containerform div:nth-child(1) form span input[type="email"]  {
+  height: 6vh;
+  padding: 0px 2vw;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: black;
+  cursor: text;
+}
+
+/* line 628, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) form span input[type="text"]::placeholder {
+  text-align: center;
+  font-size: 2vh;
+}
+
+/* line 632, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) form span p {
+  font-size: 3vh;
+}
+
+/* line 636, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) form .mensajecontent {
+  width: 50vw;
+  height: 25vh;
+}
+
+/* line 639, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) form .mensajecontent .mensaje {
+  resize: none;
+  height: 20vh;
+  border-radius: 5px;
+  outline: none;
+  text-align: center;
+  color: #3b2c2c;
+  padding-top:7vh
+}
+
+/* line 647, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) form .mensajecontent .mensaje::placeholder {
+  position: absolute;
+    left: 0%;
+    right: 0%;
+  margin-top: 7vh;
+font-size: 2vh;  
+}
+
+/* line 654, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(1) form .enviar {
+  width: 7vw;
+  background: #3d302d;
+  border: none;
+  font-size: 3vh;
+  height: 8%;
+  box-shadow: -1px -1px 1px #ffd19b;
+  cursor: pointer;
+}
+
+/* line 666, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+}
+
+/* line 671, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(2) img:nth-child(1) {
+  height: 39vh;
+}
+
+/* line 674, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(2) .anclas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* line 680, ../Nuevo portafolio/sass/style.scss */
+.containerform div:nth-child(2) .anclas img {
+  height: 3vh;
+  margin: 0px 1vw;
+}
+
+@media screen and (max-width: 800px) {
+  /* line 690, ../Nuevo portafolio/sass/style.scss */
+  header nav {
+    display: none !important;
   }
-  to {
-    transform: rotate(360deg);
+  /* line 694, ../Nuevo portafolio/sass/style.scss */
+  header div:nth-child(2) {
+    width: 100vw !important;
   }
+  /* line 697, ../Nuevo portafolio/sass/style.scss */
+  header div:nth-child(2) div:nth-child(1) {
+    width: 80vw !important;
+  }
+  /* line 700, ../Nuevo portafolio/sass/style.scss */
+  header div:nth-child(2) div:nth-child(1) .cv {
+    width: 100% !important;
+  }
+  /* line 703, ../Nuevo portafolio/sass/style.scss */
+  header div:nth-child(2) div:nth-child(1) h1 {
+    text-align-last: center;
+  }
+  /* line 706, ../Nuevo portafolio/sass/style.scss */
+  header div:nth-child(2) div:nth-child(1) p {
+    text-align: justify;
+  }
+  /* line 711, ../Nuevo portafolio/sass/style.scss */
+  header div:nth-child(3) {
+    display: none;
+  }
+  /* line 716, ../Nuevo portafolio/sass/style.scss */
+  .me {
+    margin-top: 3vh;
+    flex-direction: column;
+    height: auto;
+  }
+  /* line 720, ../Nuevo portafolio/sass/style.scss */
+  .me .whotext {
+    width: 100%;
+    margin-top: 2vh;
+  }
+  /* line 723, ../Nuevo portafolio/sass/style.scss */
+  .me .whotext::after {
+    display: none !important;
+  }
+  /* line 729, ../Nuevo portafolio/sass/style.scss */
+  .me .meimg .mecart {
+    width: 30vw;
+    height: 19vh;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative !important;
+  }
+  /* line 737, ../Nuevo portafolio/sass/style.scss */
+  .me .meimg .mecart::after {
+    display: none;
+  }
+  /* line 741, ../Nuevo portafolio/sass/style.scss */
+  .me .meimg .mecart img {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+  /* line 750, ../Nuevo portafolio/sass/style.scss */
+  .whoahref {
+    flex-direction: column;
+    margin-top: 4vh;
+    width: 100%;
+    justify-content: space-evenly;
+    height: 26vh;
+    margin-bottom: 13vh;
+  }
+  /* line 757, ../Nuevo portafolio/sass/style.scss */
+  .whoahref .hobbies,
+  .whoahref .goals {
+    width: 90vw;
+  }
+  /* line 763, ../Nuevo portafolio/sass/style.scss */
+  .skills {
+    height: auto;
+    width: 100%;
+    padding-bottom: 6vh;
+  }
+  /* line 768, ../Nuevo portafolio/sass/style.scss */
+  .skills .skillcontent {
+    height: auto !important;
+    width: 80%;
+    flex-direction: column;
+  }
+  /* line 774, ../Nuevo portafolio/sass/style.scss */
+  .skills .skillcontent p {
+    text-align-last: center;
+    width: 80%;
+  }
+  /* line 778, ../Nuevo portafolio/sass/style.scss */
+  .skills .skillcontent .porcentajes {
+    width: 90vw;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+  }
+  /* line 785, ../Nuevo portafolio/sass/style.scss */
+  .skills .skillcontent .porcentajes .pr {
+    width: 80%;
+  }
+  /* line 788, ../Nuevo portafolio/sass/style.scss */
+  .skills .skillcontent .porcentajes .pr h2 {
+    margin-left: 0vh;
+    margin-top: 1vh;
+    font-size: 4vw;
+  }
+  /* line 793, ../Nuevo portafolio/sass/style.scss */
+  .skills .skillcontent .porcentajes .pr .bar {
+    position: relative;
+    width: 100%;
+    height: 3vh;
+  }
+  /* line 804, ../Nuevo portafolio/sass/style.scss */
+  .services {
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 5vh;
+    padding-top: 5vh;
+  }
+  /* line 809, ../Nuevo portafolio/sass/style.scss */
+  .services .card {
+    height: 35vh;
+    width: 90%;
+    padding: 0px 1vh;
+    border-bottom: 1px solid white;
+    margin-bottom: 2vh;
+  }
+  /* line 817, ../Nuevo portafolio/sass/style.scss */
+  .services .card img {
+    width: 100% !important;
+    height: 21vw;
+  }
+  /* line 824, ../Nuevo portafolio/sass/style.scss */
+  .proyectos {
+    width: 100vw;
+    padding: 0px 0vw;
+    justify-content: space-around;
+  }
+  /* line 828, ../Nuevo portafolio/sass/style.scss */
+  .proyectos .proyect {
+    height: 24vh;
+    width: 40vw;
+  }
+  /* line 834, ../Nuevo portafolio/sass/style.scss */
+  .containerform {
+    height: auto;
+    width: 100vw;
+  }
+  /* line 838, ../Nuevo portafolio/sass/style.scss */
+  .containerform div {
+    width: 90%;
+  }
+  /* line 842, ../Nuevo portafolio/sass/style.scss */
+  .containerform div:nth-child(1) form {
+    padding-bottom: 5vh;
+  }
+  /* line 844, ../Nuevo portafolio/sass/style.scss */
+  .containerform div:nth-child(1) form span {
+    width: 90vw;
+    height: 10vh;
+  }
+  /* line 848, ../Nuevo portafolio/sass/style.scss */
+  .containerform div:nth-child(1) form .mensajecontent {
+    width: 90vw;
+    height: 25vh;
+  }
+  /* line 851, ../Nuevo portafolio/sass/style.scss */
+  .containerform div:nth-child(1) form .mensajecontent input[type="text"] {
+    height: 20vh;
+  }
+  /* line 855, ../Nuevo portafolio/sass/style.scss */
+  .containerform div:nth-child(1) form .enviar {
+    width: 20vw;
+    height: 5vh;
+  }
+  /* line 863, ../Nuevo portafolio/sass/style.scss */
+  .containerform div:nth-child(2) {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.success{
+  position: absolute;
+  height: 40vh;
+
+  border:  1px solid white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #3127274f;
+  backdrop-filter: blur(5px);
+
+
+}
+.success svg{
+  width: 20vw;
+  height: 20vh;
+  fill: #0EC143;
+  margin-bottom: 2vh;
+  stroke:#0EC143 ;
+
+  animation: svh 3s ease forwards;
+  
+}
+
+.success svg path{
+  
+  stroke:#0EC143 ;
+  
+}
+
+
+.success p{
+  font-size: 3vh;
+  text-shadow: 1px 1px 1px black;
+  
+}
+
+.close{
+  position: absolute;
+  right: 2%;
+  top: 3%;
+  font-size: 4vh;
+  color: rgb(219, 61, 61);
+  cursor: pointer;
 }

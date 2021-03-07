@@ -1,0 +1,12 @@
+@font-face{
+    font-family:monotype ;
+    src:local(monotype), url('./fonts/MTCORSVA.TTF') format('truetype');
+}
+
+@font-face{
+    font-family:vanio ;
+    src: local(vanio),url('./fonts/Vanio-Regular.ttf') format('truetype');
+}
+
+
+

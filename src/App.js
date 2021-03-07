@@ -1,24 +1,43 @@
+import react from "react"
 import logo from './logo.svg';
+
 import './App.css';
+
+import Nav from "./Componentes/Nav"
+import Me from './Componentes/me'
+import Skills from './Componentes/skills'
+import Services from './Componentes/services'
+import Proyect from './Componentes/proyect'
+import Form from './Componentes/form'
+
+
+
+
+const Cuerpo =()=>{
+return(
+<div>
+  <Nav></Nav>
+  <Me></Me>
+  <Skills></Skills>
+  <Services></Services>
+  <Proyect></Proyect>
+  <Form></Form>
+
+</div>
+)
+}
+
+
+
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+ <Cuerpo></Cuerpo>
+   </div>
   );
 }
 
