@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portafolio/static/css/main.94e36f75.chunk.css",
+    "main.css": "/Portafolio/static/css/main.015b70d1.chunk.css",
     "main.js": "/Portafolio/static/js/main.d9fd3236.chunk.js",
     "main.js.map": "/Portafolio/static/js/main.d9fd3236.chunk.js.map",
     "runtime-main.js": "/Portafolio/static/js/runtime-main.fbeaea67.js",
@@ -10,7 +10,7 @@
     "static/js/3.a014d0a1.chunk.js": "/Portafolio/static/js/3.a014d0a1.chunk.js",
     "static/js/3.a014d0a1.chunk.js.map": "/Portafolio/static/js/3.a014d0a1.chunk.js.map",
     "index.html": "/Portafolio/index.html",
-    "static/css/main.94e36f75.chunk.css.map": "/Portafolio/static/css/main.94e36f75.chunk.css.map",
+    "static/css/main.015b70d1.chunk.css.map": "/Portafolio/static/css/main.015b70d1.chunk.css.map",
     "static/js/2.7608b5f4.chunk.js.LICENSE.txt": "/Portafolio/static/js/2.7608b5f4.chunk.js.LICENSE.txt",
     "static/media/App.css": "/Portafolio/static/media/punts.de2a367d.svg",
     "static/media/_NestorMyrieZamora.3d1740e7.docx": "/Portafolio/static/media/_NestorMyrieZamora.3d1740e7.docx",
@@ -33,7 +33,7 @@
   "entrypoints": [
     "static/js/runtime-main.fbeaea67.js",
     "static/js/2.7608b5f4.chunk.js",
-    "static/css/main.94e36f75.chunk.css",
+    "static/css/main.015b70d1.chunk.css",
     "static/js/main.d9fd3236.chunk.js"
   ]
 }
