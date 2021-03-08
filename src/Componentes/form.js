@@ -5,7 +5,7 @@ import img1 from "../img/contactinfo.svg";
 
 import discord from "../img/discord.svg";
 import gmail from "../img/gmail.svg";
-import facebook from "../img//facebook.svg";
+import facebook from "../img/facebook.svg";
 
 
 class Form extends Component {
@@ -23,7 +23,7 @@ class Form extends Component {
       
     }
 
-    
+
   }
   rem = () => {
     this.setState({ popconfirm: 0 });

@@ -1,13 +1,13 @@
 /* line 1, ../Nuevo portafolio/sass/style.scss */
 
-@font-face{
-  font-family:monotype ;
-  src:local(monotype), url('./fonts/MTCORSVA.TTF') format('truetype');
+@font-face {
+  font-family: monotype;
+  src: local(monotype), url("./fonts/MTCORSVA.TTF") format("truetype");
 }
 
-@font-face{
-  font-family:vanio ;
-  src: local(vanio),url('./fonts/Vanio-Regular.ttf') format('truetype');
+@font-face {
+  font-family: vanio;
+  src: local(vanio), url("./fonts/Vanio-Regular.ttf") format("truetype");
 }
 
 * {
@@ -51,6 +51,7 @@ body header {
   background-size: cover;
   display: flex;
   align-items: center;
+z-index: 3;
 }
 
 /* line 36, ../Nuevo portafolio/sass/style.scss */
@@ -99,14 +100,22 @@ body header div:nth-child(2) div:nth-child(1) .cv:hover {
 
 /* line 72, ../Nuevo portafolio/sass/style.scss */
 body header div:nth-child(3) {
-  background: url("./img/faceinitial.svg");
-  background-size: 70%;
-  background-position: 90% 100%;
-  background-repeat: no-repeat;
+   
+  
   height: 100%;
   width: 40%;
+  position: relative;
+  z-index: 1 !important;
 }
+body header div:nth-child(3) svg{
+  position: absolute;
+  max-width: 60vh;
+  width: 30vw;
+  right: 0;
+  bottom: 0px !important;
+  z-index: 1;
 
+}
 /* line 80, ../Nuevo portafolio/sass/style.scss */
 body header nav {
   width: 100%;
@@ -116,6 +125,8 @@ body header nav {
   align-items: center;
   position: absolute;
   top: 10px;
+  z-index: 2;
+
 }
 
 /* line 88, ../Nuevo portafolio/sass/style.scss */
@@ -324,7 +335,7 @@ header nav a:hover span:nth-child(2) {
 .me .meimg .mecart img {
   width: 100%;
   border-radius: 0 0px 20px 20px;
-transform: translate(0,0.4vh);
+  transform: translate(0, 0.4vh);
 }
 
 /* line 264, ../Nuevo portafolio/sass/style.scss */
@@ -693,18 +704,12 @@ transform: translate(0,0.4vh);
 }
 
 /* line 562, ../Nuevo portafolio/sass/style.scss */
-.proyectos .proyect:nth-child(1) {
-  background: url("./img/ip.png");
-  background-size: cover;
-  background-position: center;
+.proyectos .proyect {
+background: white;
 }
 
 /* line 568, ../Nuevo portafolio/sass/style.scss */
-.proyectos .proyect:nth-child(2) {
-  background: url("./img/cdr.png");
-  background-size: cover;
-  background-position: center;
-}
+
 
 /* line 574, ../Nuevo portafolio/sass/style.scss */
 .proyectos .proyect:hover {
@@ -734,7 +739,6 @@ transform: translate(0,0.4vh);
   margin-bottom: 20vh;
   position: relative;
 }
-
 
 /* line 597, ../Nuevo portafolio/sass/style.scss */
 .containerform div {
@@ -768,7 +772,8 @@ transform: translate(0,0.4vh);
 }
 
 /* line 619, ../Nuevo portafolio/sass/style.scss */
-.containerform div:nth-child(1) form span input[type="text"], .containerform div:nth-child(1) form span input[type="email"]  {
+.containerform div:nth-child(1) form span input[type="text"],
+.containerform div:nth-child(1) form span input[type="email"] {
   height: 6vh;
   padding: 0px 2vw;
   border-radius: 5px;
@@ -779,7 +784,7 @@ transform: translate(0,0.4vh);
 }
 
 /* line 628, ../Nuevo portafolio/sass/style.scss */
-.containerform div:nth-child(1) form span input[type="text"]::placeholder {
+.containerform div:nth-child(1) form span input[type="text"]::placeholder,.containerform div:nth-child(1) form span input[type="email"]::placeholder {
   text-align: center;
   font-size: 2vh;
 }
@@ -803,16 +808,16 @@ transform: translate(0,0.4vh);
   outline: none;
   text-align: center;
   color: #3b2c2c;
-  padding-top:7vh
+  padding-top: 7vh;
 }
 
 /* line 647, ../Nuevo portafolio/sass/style.scss */
 .containerform div:nth-child(1) form .mensajecontent .mensaje::placeholder {
   position: absolute;
-    left: 0%;
-    right: 0%;
+  left: 0%;
+  right: 0%;
   margin-top: 7vh;
-font-size: 2vh;  
+  font-size: 2vh;
 }
 
 /* line 654, ../Nuevo portafolio/sass/style.scss */
@@ -938,13 +943,13 @@ font-size: 2vh;
   /* line 768, ../Nuevo portafolio/sass/style.scss */
   .skills .skillcontent {
     height: auto !important;
-    width: 80%;
+    width: 90%;
     flex-direction: column;
   }
   /* line 774, ../Nuevo portafolio/sass/style.scss */
   .skills .skillcontent p {
     text-align-last: center;
-    width: 80%;
+    width: 90%;
   }
   /* line 778, ../Nuevo portafolio/sass/style.scss */
   .skills .skillcontent .porcentajes {
@@ -956,13 +961,15 @@ font-size: 2vh;
   }
   /* line 785, ../Nuevo portafolio/sass/style.scss */
   .skills .skillcontent .porcentajes .pr {
-    width: 80%;
+    width: 90%;
+    margin-bottom: 1vh;
+
   }
   /* line 788, ../Nuevo portafolio/sass/style.scss */
   .skills .skillcontent .porcentajes .pr h2 {
     margin-left: 0vh;
     margin-top: 1vh;
-    font-size: 4vw;
+    font-size: 3vh;
   }
   /* line 793, ../Nuevo portafolio/sass/style.scss */
   .skills .skillcontent .porcentajes .pr .bar {
@@ -994,7 +1001,7 @@ font-size: 2vh;
   .proyectos {
     width: 100vw;
     padding: 0px 0vw;
-    justify-content: space-around;
+    justify-content: center;
   }
   /* line 828, ../Nuevo portafolio/sass/style.scss */
   .proyectos .proyect {
@@ -1003,8 +1010,9 @@ font-size: 2vh;
   }
   /* line 834, ../Nuevo portafolio/sass/style.scss */
   .containerform {
-    height: auto;
-    width: 100vw;
+    height: 100%;
+    padding: 10px 0px;
+    width: 100%;
   }
   /* line 838, ../Nuevo portafolio/sass/style.scss */
   .containerform div {
@@ -1012,74 +1020,99 @@ font-size: 2vh;
   }
   /* line 842, ../Nuevo portafolio/sass/style.scss */
   .containerform div:nth-child(1) form {
-    padding-bottom: 5vh;
+    padding-bottom: 5px;
   }
   /* line 844, ../Nuevo portafolio/sass/style.scss */
   .containerform div:nth-child(1) form span {
-    width: 90vw;
-    height: 10vh;
+    width: 100%;
+    height: 90px;
+  }
+  .containerform div:nth-child(1) form span p{
+  font-size:30px;
   }
   /* line 848, ../Nuevo portafolio/sass/style.scss */
   .containerform div:nth-child(1) form .mensajecontent {
-    width: 90vw;
-    height: 25vh;
+    width: 100%;
+    height: 200px;
+  }
+  .mensaje{
+    height: 90% !important;
   }
   /* line 851, ../Nuevo portafolio/sass/style.scss */
-  .containerform div:nth-child(1) form .mensajecontent input[type="text"] {
-    height: 20vh;
-  }
+  
   /* line 855, ../Nuevo portafolio/sass/style.scss */
   .containerform div:nth-child(1) form .enviar {
-    width: 20vw;
-    height: 5vh;
+    margin-top: 10px;
+    width: 30%;
+    height: 40px;
+    font-size: 20px;
   }
   /* line 863, ../Nuevo portafolio/sass/style.scss */
   .containerform div:nth-child(2) {
     display: none;
   }
+
+
+  .containerform div:nth-child(1) form span input[type="text"],
+  .containerform div:nth-child(1) form span input[type="email"] {
+  height: 40px;
+  width: 100%;
+  font-size:15px;
+  
+  }
+  
+  .containerform div:nth-child(1) form .mensajecontent .mensaje::placeholder {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    margin-top: 2px;
+    font-size: 2vh;
+  }
+
+  .disigns {
+  
+    width:100%;
+  }
+.containerform div:nth-child(1) form span input[type="text"]::placeholder,.containerform div:nth-child(1) form span input[type="email"]::placeholder, .mensaje::placeholder {
+font-size: 20px !important;
+}
+
 }
 
 /*# sourceMappingURL=style.css.map */
 
-.success{
+.success {
   position: absolute;
   height: 40vh;
 
-  border:  1px solid white;
-  display:flex;
+  border: 1px solid white;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #3127274f;
   backdrop-filter: blur(5px);
-
-
 }
-.success svg{
+.success svg {
   width: 20vw;
   height: 20vh;
-  fill: #0EC143;
+  fill: #0ec143;
   margin-bottom: 2vh;
-  stroke:#0EC143 ;
+  stroke: #0ec143;
 
   animation: svh 3s ease forwards;
-  
 }
 
-.success svg path{
-  
-  stroke:#0EC143 ;
-  
+.success svg path {
+  stroke: #0ec143;
 }
 
-
-.success p{
+.success p {
   font-size: 3vh;
   text-shadow: 1px 1px 1px black;
-  
 }
 
-.close{
+.close {
   position: absolute;
   right: 2%;
   top: 3%;
