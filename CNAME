@@ -1,1 +1,5 @@
-wwww.facebook.com
+
+;WWW.nestormyrie.site.                     IN      A
+WWW.nestormyrie.site.              3592    IN      CNAME   nestormyrie.github.io.
+nestormyrie.github.io.      43192   IN      CNAME    GITHUB-PAGES-SERVER .
+GITHUB-PAGES-SERVER .         22      IN      A       192.0.2.1
