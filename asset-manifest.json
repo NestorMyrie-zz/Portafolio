@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.94271023.chunk.css",
-    "main.js": "/static/js/main.cf94110e.chunk.js",
-    "main.js.map": "/static/js/main.cf94110e.chunk.js.map",
+    "main.js": "/static/js/main.d7fd9a90.chunk.js",
+    "main.js.map": "/static/js/main.d7fd9a90.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c489be45.js",
     "runtime-main.js.map": "/static/js/runtime-main.c489be45.js.map",
     "static/js/2.98abaf9c.chunk.js": "/static/js/2.98abaf9c.chunk.js",
@@ -14,7 +14,7 @@
     "static/js/2.98abaf9c.chunk.js.LICENSE.txt": "/static/js/2.98abaf9c.chunk.js.LICENSE.txt",
     "static/media/Deta.9d2c6cc2.png": "/static/media/Deta.9d2c6cc2.png",
     "static/media/App.css": "/static/media/punts.de2a367d.svg",
-    "static/media/_NestorMyrieZamora.3d1740e7.docx": "/static/media/_NestorMyrieZamora.3d1740e7.docx",
+    "static/media/NestorMyrieZamora.3d1740e7.docx": "/static/media/NestorMyrieZamora.3d1740e7.docx",
     "static/media/book.a882ea2f.svg": "/static/media/book.a882ea2f.svg",
     "static/media/camera.7e6db5af.svg": "/static/media/camera.7e6db5af.svg",
     "static/media/cdr.46c83f90.png": "/static/media/cdr.46c83f90.png",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.c489be45.js",
     "static/js/2.98abaf9c.chunk.js",
     "static/css/main.94271023.chunk.css",
-    "static/js/main.cf94110e.chunk.js"
+    "static/js/main.d7fd9a90.chunk.js"
   ]
 }
